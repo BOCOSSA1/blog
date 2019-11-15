@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-ms-8">
+      <h4>Posts</h4>
+      <ul class="list-group" >
+        <app-posts *ngFor="let post of posts"
+        [postTitle]="post.title"
+        [postContent]="post.content"
+        [postDate]="post.created_at"></app-posts>
+       
+      </ul>
+    </div>
+  </div>
+</div>
